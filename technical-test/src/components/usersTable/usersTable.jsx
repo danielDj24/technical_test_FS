@@ -27,7 +27,7 @@ const UsersTable = () => {
 
     // Obtener la lista de productos disponibles
     useEffect(() => {
-        axios.get("http://127.0.0.1:5000/api/productos")
+        axios.get(`${API_BASE_URL}/api/productos`)
             .then(res => setProductosDisponibles(res.data))
             .catch(err => {
                 console.error("Error obteniendo productos:", err);
