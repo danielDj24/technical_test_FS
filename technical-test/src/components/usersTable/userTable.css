@@ -68,8 +68,6 @@
     }
 }
 
-
-
 .table-update-btn {
     background-color: #007bff;
     color: white;
@@ -169,3 +167,40 @@
     border-color: #007bff;
 }
 
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .table-update-btn,
+    .modal-update-btn,
+    .modal-delete-btn,
+    .table-delete-btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .modal-close-btn {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+
+    .table-update-btn,
+    .modal-update-btn,
+    .modal-delete-btn,
+    .table-delete-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .modal-content {
+        width: 80%; 
+        max-width: 400px; 
+        align-items: center;
+        
+    }
+
+}

@@ -65,3 +65,14 @@ tr:nth-child(even) td {
 tr:hover {
     background-color: #ddd;
 }
+
+@media (max-width: 768px) {
+    .table-responsive table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
